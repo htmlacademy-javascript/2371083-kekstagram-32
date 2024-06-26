@@ -91,4 +91,4 @@ const getPictures = () => Array.from(
   (_, index) => createPicture(index + 1)
 );
 
-console.log(getPictures());
+//console.log(getPictures());
