@@ -3,3 +3,5 @@ import {generateThumbnails} from './thumbnail.js';
 
 
 generateThumbnails(getPictures());
+
+//
