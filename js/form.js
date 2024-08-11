@@ -6,7 +6,7 @@ import {
 
 const MAX_HASHTAG_COUNT = 5;
 const VALID_SYMBOLS = /^#[a-zа-яё0-9]{1,19}$/i;
-const FILE_TYPES = {'jpg', 'jpeg', 'png'};
+const FILE_TYPES = ['jpg', 'jpeg', 'png'];
 const ErrorText = {
   INVALID_COUNT: `Максимум ${MAX_HASHTAG_COUNT} хэштегов`,
   NOT_UNIQUE: 'Хэштеги должны быть уникальными',
@@ -73,7 +73,7 @@ const isValidType = (file) => {
 const normalizeTags = (tagString) =>
   tagString
     .trim()
-   .split(' ')
+    .split(' ')
     .filter((tag) => Boolean(tag.length));
 
 const hasValidTags = (value) =>
