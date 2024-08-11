@@ -62,7 +62,7 @@ const isTextFieldFocused = () =>
   document.activeElement === hashtagField ||
   document.activeElement === commentField;
 
-const isErrorMessageShow = () => Boolean(document.querySelector('.error'));
+const isErrorMessageShown = () => Boolean(document.querySelector('.error'));
 
 const isValidType = (file) => {
   const fileName = file.name.toLowerCase();
