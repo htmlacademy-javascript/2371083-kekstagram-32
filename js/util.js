@@ -47,5 +47,6 @@ export {
   getRandomInteger,
   getRandomArrayElement,
   createIdGenerator,
-};
+}
+
 */
