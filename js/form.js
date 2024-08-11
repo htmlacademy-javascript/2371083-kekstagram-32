@@ -27,7 +27,7 @@ const hashtagField = form.querySelector('.text__hashtags');
 const commentField = form.querySelector('text__description');
 const submitButton = form.querySelector('.img-upload__submit');
 const photoPreview = form.querySelector('.img-upload__preview img');
-const effectsPreviews = form.querySelector('.effects__preview');
+const effectsPreviews = form.querySelectorAll('.effects__preview');
 
 const pristine = new Pristine(form, {
   classTo: 'img-upload__field-wrapper',
