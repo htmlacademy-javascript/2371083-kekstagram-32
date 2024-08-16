@@ -24,4 +24,3 @@ try {
   showAlert();
 }
 
-//renderGallery(getPictures());

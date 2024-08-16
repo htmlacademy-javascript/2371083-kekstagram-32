@@ -17,7 +17,7 @@ const COMMENT_LINES = [
   'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!',
 ];
 
-const DESCRIPTION = [
+const DESCRIPTIONS = [
   'Все хорошо!',
   'Вся красота мира в одной картинке',
   'Да это же просто невероятно!',
@@ -64,7 +64,7 @@ const createPicture = (index) => (
   {
     id: index,
     url: index < 26 ? `photos/${index}.jpg` : 'photos/1.jpg',
-    description: getRandomArrayElement(DESCRIPTION),
+    description: getRandomArrayElement(DESCRIPTIONS),
     likes: getRandomInteger(LIKE_MIN_COUNT, LIKE_MAX_COUNT),
     comments: Array.from(
       { length: getRandomInteger(COMMENT_MIN_COUNT, COMMENT_MAX_COUNT) },
